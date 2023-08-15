@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap');
+
+* {
+  font-size: 14px;
+  @apply font-body;
+}
+
+header,
+main,
+footer {
+  margin: auto;
+}
+
+@layer components {
+  .nav-link {
+    @apply hover:bg-slate-300 cursor-pointer;
+  }
+}
