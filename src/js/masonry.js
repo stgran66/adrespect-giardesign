@@ -42,6 +42,7 @@ let msnry = new Masonry('#container', {
   itemSelector: '.demo--loaded',
   columnWidth: 451,
   gutter: 43,
+  // isFitWidth: true,
 });
 
 function imagesLoadedAndLayout(elem) {
