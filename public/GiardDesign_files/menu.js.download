@@ -1,0 +1,30 @@
+const refs = {
+  menuBtn: document.querySelector('#burger-menu'),
+  navMenu: document.querySelector('#site-nav'),
+  offerMenuBtn: document.querySelector('#offer-menu-btn'),
+  offerMenu: document.querySelector('#offer-menu'),
+};
+
+const closeMenu = (e) => {
+  if (!e.target.closest('#burger-menu') && !e.target.closest('#site-nav')) {
+    refs.navMenu.classList.remove('menu-open');
+    document.removeEventListener('click', closeMenu);
+    refs.menuBtn.addEventListener('click', openMenu);
+  }
+};
+
+const openMenu = () => {
+  refs.navMenu.classList.add('menu-open');
+  document.addEventListener('click', closeMenu);
+  refs.menuBtn.removeEventListener('click', openMenu);
+};
+
+refs.menuBtn.addEventListener('click', openMenu);
+
+const openOfferMenu = () => {
+  console.log('offer menu open');
+  refs.offerMenu.classList.add('offer-open');
+  refs.offerMenuBtn.classList.add('lose-shadow');
+};
+
+refs.offerMenuBtn.addEventListener('click', openOfferMenu);

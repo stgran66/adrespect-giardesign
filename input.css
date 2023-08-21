@@ -16,7 +16,7 @@ footer {
 
 @layer components {
   .nav-link {
-    @apply hover:bg-slate-50 hover:drop-shadow-lg lg:px-[24px] lg:py-[12px] px-[12px] py-[6px] cursor-pointer rounded-full transition-all duration-200;
+    @apply hover:bg-slate-50 hover:drop-shadow-lg lg:px-[24px] lg:py-[12px] px-[12px] py-[6px] cursor-pointer rounded-full transition-all duration-200 text-center justify-center sm:max-md:even:bg-slate-100;
   }
 
   .gallery-item {
