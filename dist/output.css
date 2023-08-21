@@ -2047,6 +2047,14 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/public\/images\/Photo\.png\'\)\] {
+  background-image: url('./public/images/Photo.png');
+}
+
+.bg-\[url\(\.\/public\/images\/Photo_1\.png\)\] {
+  background-image: url(./public/images/Photo_1.png);
+}
+
 .from-\[\#FFE6C0\] {
   --tw-gradient-from: #FFE6C0 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 230 192 / 0) var(--tw-gradient-to-position);
