@@ -11,31 +11,31 @@
 header,
 main,
 footer {
-  margin: auto;
+  @apply m-auto;
 }
 
 @layer components {
   .nav-link {
     @apply hover:bg-slate-50 hover:drop-shadow-lg lg:px-[24px] lg:py-[12px] px-[12px] py-[6px] cursor-pointer rounded-full transition-all duration-200;
   }
-}
 
-.demo {
-  @apply inline-block max-w-[451px] mb-[42px] invisible;
-}
+  .gallery-item {
+    @apply inline-block max-w-[451px] mb-[42px] invisible;
+  }
 
-.demo--loaded {
-  @apply visible;
-}
+  .gallery-item--loaded {
+    @apply visible;
+  }
 
-.section-grid {
-  @apply lg:grid lg:grid-cols-[1fr_688px_64px_688px_1fr];
-}
+  .section-grid {
+    @apply lg:grid lg:grid-cols-[1fr_688px_64px_688px_1fr];
+  }
 
-.heading {
-  @apply font-heading font-medium;
-}
+  .heading {
+    @apply font-heading font-medium;
+  }
 
-.button {
-  @apply rounded-full hover:shadow-lg transition-all duration-200;
+  .button {
+    @apply rounded-full hover:shadow-lg transition-all duration-200;
+  }
 }
