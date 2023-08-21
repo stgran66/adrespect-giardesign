@@ -5,8 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap');
 
 * {
-  @apply font-body text-[14px];
-  scroll-behavior: smooth;
+  @apply font-body text-sm scroll-smooth;
 }
 
 header,
@@ -17,7 +16,7 @@ footer {
 
 @layer components {
   .nav-link {
-    @apply hover:bg-slate-300 cursor-pointer;
+    @apply hover:bg-slate-50 hover:drop-shadow-lg lg:px-[24px] lg:py-[12px] px-[12px] py-[6px] cursor-pointer rounded-full transition-all duration-200;
   }
 }
 
@@ -29,6 +28,14 @@ footer {
   @apply visible;
 }
 
-.transparent {
-  @apply opacity-0;
+.section-grid {
+  @apply lg:grid lg:grid-cols-[1fr_688px_64px_688px_1fr];
+}
+
+.heading {
+  @apply font-heading font-medium;
+}
+
+.button {
+  @apply rounded-full hover:shadow-lg transition-all duration-200;
 }
