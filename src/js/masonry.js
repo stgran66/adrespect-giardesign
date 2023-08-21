@@ -31,6 +31,8 @@ function imagesLoadedAndLayout(elem) {
 
 imagesLoadedAndLayout('#container').then(() => {});
 
+let gallery = new SimpleLightbox('.gallery a', {});
+
 // Event listener for gallery expand button
 refs.expandBtn.addEventListener('click', () => {
   refs.container.classList.toggle('!h-[1475px]');
@@ -38,9 +40,9 @@ refs.expandBtn.addEventListener('click', () => {
   if (refs.expandBtn.innerText === 'Rozwiń') {
     refs.expandBtn.childNodes[0].nodeValue = 'Zwiń';
     refs.expandIcon.style.transform = 'rotate(180deg)';
-    refs.galleryGradient.classList.add('opacity-0');
+    refs.galleryGradient.classList.add('opacity-0', 'pointer-events-none');
   } else {
-    refs.galleryGradient.classList.remove('opacity-0');
+    refs.galleryGradient.classList.remove('opacity-0', 'pointer-events-none');
     refs.container.scrollIntoView({
       behavior: 'smooth',
     });
