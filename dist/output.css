@@ -988,6 +988,10 @@ video {
   display: list-item;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .hidden {
   display: none;
 }
@@ -1024,8 +1028,16 @@ video {
   height: 28px;
 }
 
+.h-\[740px\] {
+  height: 740px;
+}
+
 .h-\[auto\] {
   height: auto;
+}
+
+.h-3 {
+  height: 48px;
 }
 
 .w-1 {
@@ -1067,6 +1079,14 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-3 {
+  width: 48px;
 }
 
 .max-w-\[124px\] {
@@ -2043,11 +2063,6 @@ video {
   border-bottom-left-radius: 0.25rem;
 }
 
-.rounded-b-\[10px\] {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .rounded-e {
   border-start-end-radius: 0.25rem;
   border-end-end-radius: 0.25rem;
@@ -2254,12 +2269,16 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\&\#39\;\.\.\/public\/images\/Photo\.png\&\#39\;\)\] {
-  background-image: url(&#39;../public/images/Photo.png&#39;);
-}
-
 .bg-\[url\(\'\.\.\/public\/images\/Photo\.png\'\)\] {
   background-image: url('../public/images/Photo.png');
+}
+
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1539145632639-c13729854e15\?ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\&auto\=format\&fit\=crop\&w\=1170\&q\=80\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1539145632639-c13729854e15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+}
+
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1616018659312-49eec261521a\?ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\&auto\=format\&fit\=crop\&w\=1170\&q\=80\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1616018659312-49eec261521a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
 }
 
 .bg-\[url\(\.\.\/public\/images\/Photo_1\.png\)\] {
@@ -3352,10 +3371,6 @@ footer {
   text-align: center;
 }
 
-.focus\:w-5:focus {
-  width: 192px;
-}
-
 .focus\:w-\[160px\]:focus {
   width: 160px;
 }
@@ -3402,10 +3417,6 @@ footer {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
-}
-
-.group:hover .group-hover\:w-5 {
-  width: 192px;
 }
 
 .group:hover .group-hover\:w-\[160px\] {
@@ -3606,12 +3617,20 @@ footer {
     grid-column-start: 2;
   }
 
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+
   .lg\:col-end-4 {
     grid-column-end: 4;
   }
 
   .lg\:col-end-5 {
     grid-column-end: 5;
+  }
+
+  .lg\:col-end-6 {
+    grid-column-end: 6;
   }
 
   .lg\:block {
@@ -3624,6 +3643,10 @@ footer {
 
   .lg\:h-\[45px\] {
     height: 45px;
+  }
+
+  .lg\:h-\[740px\] {
+    height: 740px;
   }
 
   .lg\:w-\[1040px\] {

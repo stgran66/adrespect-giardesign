@@ -36,8 +36,10 @@ function closeMobMenu(e) {
   }
 }
 
+console.log(refs);
 // Toggle menu using burger button
 function toggleMobMenu(e) {
+  console.log('click');
   e.stopPropagation();
   if (!isMenuOpen) {
     refs.mobMenu.classList.add('mob-menu-open');
